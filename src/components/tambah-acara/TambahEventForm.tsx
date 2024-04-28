@@ -41,14 +41,14 @@ export default function TambahEventForm() {
   });
 
   return (
-    <div className="mx-[25px] my-[25px]">
-      <h1 className="text-headerBlue text-[24px] font-semibold mt-6 mb-[20px]">
+    <div className="mr-[25px] lg:mx-[25px] my-[25px] flex flex-col">
+      <h1 className="self-center lg:self-start text-headerBlue text-[24px] font-semibold mt-6 mb-[20px]">
         Event Baru
       </h1>
-      <div className="w-full flex flex-row space-x-6 ">
+      <div className="w-full flex lg:flex-row flex-col space-x-6 ">
         <Form {...form}>
           <div className="flex flex-col">
-            <div className="w-[200px] h-[250px] mb-10">
+            <div className="self-center lg:self-start w-[200px] h-[250px] mb-10">
               <Image src="/images/Art.png" width={250} height={250} alt="" />
             </div>
 
@@ -172,7 +172,7 @@ export default function TambahEventForm() {
             </div>
 
             <div className="flex flex-row space-x-6">
-              <div className="w-1/4">
+              <div className="w-1/2">
                 <FormField
                   control={form.control}
                   name="hargaTiket"
@@ -200,7 +200,7 @@ export default function TambahEventForm() {
                 />
               </div>
 
-              <div className="w-3/4">
+              <div className="w-1/2">
                 <FormField
                   control={form.control}
                   name="kategori"
