@@ -14,11 +14,11 @@ export default function Login() {
 
   const handleLoginEO = () => {
     console.log("Login as EO");
-  }
+  };
 
   const handleLoginUser = () => {
     console.log("Login as User");
-  }
+  };
 
   return (
     <div className="h-screen w-full flex justify-center items-center bg-white">
@@ -73,11 +73,17 @@ export default function Login() {
 
               <h2 className="self-center text-black/50">--OR--</h2>
 
-              <button onClick={handleLoginEO} className="bg-primaryBlue text-white rounded-md px-6 py-2">
-                Masuk Sebagai EO
+              <button
+                onClick={handleLoginEO}
+                className="bg-primaryBlue text-white rounded-md px-6 py-2"
+              >
+                <a href="/acara/tambah-acara">Masuk Sebagai EO</a>
               </button>
 
-              <button onClick={handleLoginUser} className="bg-primaryBlue text-white rounded-md px-6 py-2">
+              <button
+                onClick={handleLoginUser}
+                className="bg-primaryBlue text-white rounded-md px-6 py-2"
+              >
                 Masuk Sebagai User
               </button>
             </div>

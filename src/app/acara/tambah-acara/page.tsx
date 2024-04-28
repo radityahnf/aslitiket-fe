@@ -1,5 +1,5 @@
-import TambahEventForm from "./_components/TambahEventForm";
-import DaftarEventSide from "../_components/DaftarEventSide";
+import TambahEventForm from "../../../components/tambah-acara/TambahEventForm";
+import DaftarEventSide from "../../../components/tambah-acara/DaftarEventSide";
 
 export default function TambahEvent() {
   return (
